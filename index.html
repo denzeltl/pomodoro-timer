@@ -33,13 +33,15 @@
                         stroke-width="20"
                     />
                 </svg>
-                <h2 id="sessions">Session 1</h2>
+                <h2 id="sessions"></h2>
                 <h1 id="timer">25:00</h1>
-                <p id="command">focus</p>
+                <p id="command"></p>
             </section>
 
             <!-- Controls -->
             <section id="controls">
+                <audio src="sounds/pinwheel.mp3" id="notif-sound"></audio>
+                <audio src="sounds/piston.mp3" id="start-sound"></audio>
                 <!-- Play button -->
                 <svg id="play" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -54,7 +56,7 @@
                 </svg>
 
                 <!-- Pause button -->
-                <svg id="pause" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="pause" class="hidden" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M62 32.5C62 48.7924 48.7924 62 32.5 62C16.2076 62 3 48.7924 3 32.5C3 16.2076 16.2076 3 32.5 3C48.7924 3 62 16.2076 62 32.5Z"
                         stroke="#FF6C6C"
