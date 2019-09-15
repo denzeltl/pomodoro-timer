@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- <link rel="stylesheet" href="css/debug.css" /> -->
+        <title>Pomodoro Timer</title>
+    </head>
+    <body>
+        <main id="container">
+            <!-- Circles and timer -->
+            <section id="circles">
+                <svg id="base-circle" width="295" height="295" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M495 250C495 385.31 385.31 495 250 495C114.69 495 5 385.31 5 250C5 114.69 114.69 5 250 5C385.31 5 495 114.69 495 250Z"
+                        stroke="#d5d5d5"
+                        stroke-width="5"
+                    />
+                </svg>
+                <svg id="red-circle" width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M305 160C305 240.081 240.081 305 160 305C79.9186 305 15 240.081 15 160C15 79.9186 79.9186 15 160 15C240.081 15 305 79.9186 305 160Z"
+                        stroke="#FF6C6C"
+                        stroke-width="20"
+                    />
+                </svg>
+                <h2 id="sessions">Session 1</h2>
+                <h1 id="timer">25:00</h1>
+                <p id="command">focus</p>
+            </section>
+
+            <!-- Controls -->
+            <section id="controls">
+                <!-- Play button -->
+                <svg id="play" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M62 32.5C62 48.7924 48.7924 62 32.5 62C16.2076 62 3 48.7924 3 32.5C3 16.2076 16.2076 3 32.5 3C48.7924 3 62 16.2076 62 32.5Z"
+                        stroke="#FF6C6C"
+                        stroke-width="6"
+                    />
+                    <path
+                        d="M21.3205 21.1962C21.3205 18.8868 23.8205 17.4434 25.8205 18.5981L46.8205 30.7224C48.8205 31.8771 48.8205 34.7639 46.8205 35.9186L25.8205 48.0429C23.8205 49.1976 21.3205 47.7543 21.3205 45.4449L21.3205 21.1962Z"
+                        fill="#FF6C6C"
+                    />
+                </svg>
+
+                <!-- Pause button -->
+                <svg id="pause" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M62 32.5C62 48.7924 48.7924 62 32.5 62C16.2076 62 3 48.7924 3 32.5C3 16.2076 16.2076 3 32.5 3C48.7924 3 62 16.2076 62 32.5Z"
+                        stroke="#FF6C6C"
+                        stroke-width="6"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M25 47C23.8954 47 23 46.1046 23 45V22C23 20.8954 23.8954 20 25 20H26C27.1046 20 28 20.8954 28 22V45C28 46.1046 27.1046 47 26 47H25Z"
+                        fill="#FF6C6C"
+                        stroke="#FF6C6C"
+                        stroke-width="3"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M39 47C37.8954 47 37 46.1046 37 45V22C37 20.8954 37.8954 20 39 20H40C41.1046 20 42 20.8954 42 22V45C42 46.1046 41.1046 47 40 47H39Z"
+                        fill="#FF6C6C"
+                        stroke="#FF6C6C"
+                        stroke-width="3"
+                    />
+                </svg>
+            </section>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>
