@@ -5,7 +5,7 @@ const app = () => {
     const command = document.querySelector("#command");
     const play = document.querySelector("#play");
     const pause = document.querySelector("#pause");
-    let minutesDuration = 60;
+    let minutesDuration = 1500;
     let sessionCounter = 1;
     let redCircleOutline = document.querySelector("#red-circle path").getTotalLength();
 
@@ -23,11 +23,6 @@ const app = () => {
             command.textContent = "Focus";
             redCircleOutline -= redCircleOutline / minutesDuration;
             redCircle.style.strokeDashoffset = redCircleOutline;
-
-            // if minutesDuration <= 0
-            TODO:BREAK TIMES AND EXTRA FEATURES
-            if (minutesDuration <= 0) {
-            }
 
             // If minutes < 10
             if (Math.floor(minutesDuration / 60 < 10)) {
