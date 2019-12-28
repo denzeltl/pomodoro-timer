@@ -11,6 +11,7 @@ const app = () => {
 
     // Add event for play button
     play.addEventListener("click", e => {
+    	console.log("hi");
         play.classList.add("hidden");
         pause.classList.remove("hidden");
 
