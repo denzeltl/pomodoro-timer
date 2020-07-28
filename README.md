@@ -2,7 +2,7 @@
 
 A simple Pomodoro Timer with extra features (Reminds to drink water, rest eyes, sit / stand)
 
-View [here](https://denzeltl.github.io/pomodoro/)
+View [here](https://denzeltl.github.io/pomodoro-timer/)
 
 **Built with:** _HTML, CSS, SASS, JavaScript_
 
