@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-A simple Pomodoro Timer with extra features (Reminds to drink water, rest eyes, sit / stand)
+A simple Pomodoro Timer with extra features (reminds to drink water, rest eyes, sit / stand)
 
 View [here](https://denzeltl.github.io/pomodoro-timer/)
 
